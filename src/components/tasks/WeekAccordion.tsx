@@ -39,7 +39,7 @@ export function WeekAccordion({
       <button
         onClick={onToggle}
         className={`w-full flex items-center gap-3 p-4 text-left transition-colors ${
-          is100 ? 'bg-emerald-400/5 hover:bg-emerald-400/10' : 'bg-[--color-surface] hover:bg-[--color-surface-2]'
+          is100 ? 'bg-[#4cba8a]/5 hover:bg-[#4cba8a]/10' : 'bg-[--color-surface] hover:bg-[--color-surface-2]'
         }`}
       >
         <span
