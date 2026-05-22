@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #08080d;
+  --color-surface: #0e0e18;
+  --color-surface-2: #141422;
+  --color-border: #1c1c2e;
+  --color-accent: #5b8cff;
+  --color-accent-2: #ff6b35;
+  --color-text-primary: #dde1f5;
+  --color-text-secondary: #5a5f8a;
+  --color-success: #34d399;
+  --color-warning: #fbbf24;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: 'JetBrains Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100svh;
+}
+
+@keyframes checkmark {
+  from {
+    stroke-dashoffset: 20;
+    stroke-dasharray: 20;
+  }
+  to {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 20;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
